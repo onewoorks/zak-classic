@@ -1,0 +1,36 @@
+<?php
+session_start();
+//include('../functions.php');
+$wid = new widget;
+	echo "<b>Aliran Wang Bulan Ini</b>";
+	echo "<div class=''>";
+	echo "<div class='col no5 dotted bbtop tright'>Masuk&nbsp;</div>";
+	echo "<div class='col no8 rem in tright dotted bbtop'>".curr($wid->akaunbulanini(1))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "<div class='col no5 line tright'>Keluar&nbsp;</div>";
+	echo "<div class='col no8 rem out tright line'>".curr($wid->akaunbulanini(2))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "<div class='col no5 dbl tright'>Baki&nbsp;</div>";
+	echo "<div class='col no8 tright rem dbl'>".curr(($wid->akaunbulanini(1)-$wid->akaunbulanini(2)))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "</div>";
+	echo "<br />";
+	echo "<b>Maklumat Emas</b>";
+	echo "<div class=''>";
+	echo "<div>Nilai (RM)</div>";
+	echo "<div class='col no5 dotted bbtop tright'>Belian&nbsp;</div>";
+	echo "<div class='col no8 rem out tright dotted bbtop'>".curr($wid->emas(2,2))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "<div class='col no5 line tright'>Jualan&nbsp;</div>";
+	echo "<div class='col no8 rem in tright line'>".curr($wid->emas(1,2))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "<br />";
+	echo "<div>Berat (g)</div>";
+	echo "<div class='col no5 dotted bbtop tright'>Belian&nbsp;</div>";
+	echo "<div class='col no8 rem tright dotted bbtop'>".curr($wid->emas(2,1))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "<div class='col no5 line tright'>Jualan&nbsp;</div>";
+	echo "<div class='col no8 rem tright line'>".curr($wid->emas(1,1))."&nbsp;</div>";
+	echo "<div class='clear'></div>";
+	echo "</div>";
+?>
