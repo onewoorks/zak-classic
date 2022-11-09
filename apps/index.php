@@ -24,7 +24,7 @@ include_once('settings.php');
 	<?php include_once('template/footer.php'); ?>
 </div>
 
-<script type="text/javascript" src="//apps/zak/viewer/scripts/paging.js"></script>
-<script type="text/javascript" src="//apps/sistemPengurusanEmas/viewer/scripts/paging.js"></script>
-<script type="text/javascript" src="//scripts/jquery.js"></script>
-<script type="text/javascript" src="//scripts/jpage.js"></script>
+<script type="text/javascript" src="<?php echo hostinfo(); ?>/apps/zak/viewer/scripts/paging.js"></script>
+<script type="text/javascript" src="<?php echo hostinfo(); ?>/apps/sistemPengurusanEmas/viewer/scripts/paging.js"></script>
+<script type="text/javascript" src="<?php echo hostinfo(); ?>/scripts/jquery.js"></script>
+<script type="text/javascript" src="<?php echo hostinfo(); ?>/scripts/jpage.js"></script>

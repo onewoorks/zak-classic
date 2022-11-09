@@ -1,5 +1,5 @@
 <?php
 
 function hostinfo() {
-    return "http://" . $_SERVER['HTTP_HOST'] . '/';
+    return "//" . $_SERVER['HTTP_HOST'] . '/';
 }
