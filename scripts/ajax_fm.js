@@ -416,11 +416,11 @@ function appsOpen(x) {
     //var a = document.getElementById('useridname').value;
     var a = 2;
     var menu;
+    document.getElementById('pageloc').innerHTML = "Processing...";
     nocache = Math.random();
     http.open('get', 'apps/switcher.php?a=' + x + '&nocache=' + nocache);
     http.onreadystatechange = appsdone;
     http.send(null);
-    document.getElementById('appspage').innerHTML = "Processing...";
     for (i = 0; i < 3; i++) {
         if (i == x) {
             document.getElementById("menu" + i).className = "texl activeApp";
