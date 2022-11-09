@@ -7,7 +7,7 @@ session_destroy();
     </head>
     <body>
         <script>
-            window.location = '<?php echo '/zak/'; ?>'
+            window.location = '//zak.pengurusanemas.my'
         </script>
 
     </body>
